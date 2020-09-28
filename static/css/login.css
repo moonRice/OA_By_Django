@@ -1,0 +1,19 @@
+.login {
+    margin-top: 170px;
+    background-color: white;
+    /*opacity: 0.8;*/
+    /*margin: auto;*/
+    height: 350px;
+    width: 850px;
+    /*border: 10px solid #999;*/
+    border: 0px;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);
+}
+
+.login-left-img {
+    float: left;
+    width: 300px;
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+}

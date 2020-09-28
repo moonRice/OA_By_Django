@@ -1,0 +1,24 @@
+{% extends 'model_page/oa_main_page_model.html' %}
+
+{% block title %}
+{{ gb_d.title }}
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div align="center">
+            <h2>{{ gb_d.title }}</h2>
+            <hr>
+            发言人：{{ gb_d.auth }} 发言时间：{{ gb_d.create_time }} 最后更新时间：{{ gb_d.update_time }}
+        </div>
+
+        {{ gb_d.text|safe }}
+
+
+    <h2>留言区</h2>
+        <hr>
+    {% for a in re %}
+    {{ a.auth }} 回复道：<small>{{ a.text|safe }}</small><br>
+    {% endfor %}
+    </div>
+{% endblock %}

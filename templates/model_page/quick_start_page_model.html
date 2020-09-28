@@ -1,0 +1,29 @@
+{% extends 'model_page/oa_main_page_model.html' %}
+{#这是“快速使用”模板#}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-2">
+            <div align="center">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-time"></span> 历史功能</a></li>
+                    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-star-empty"></span> 我的收藏</a></li>
+                    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-ok"></span> 今日签到</a></li>
+                    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-asterisk"></span> 办理请假</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-10">
+
+            {% block right_info %}
+
+            {% endblock %}
+
+
+        </div>
+    </div>
+</div>
+{% endblock %}

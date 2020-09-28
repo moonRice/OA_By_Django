@@ -1,0 +1,32 @@
+{% extends 'model_page/oa_main_page_model.html' %}
+
+{% block title %}
+留言簿
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div align="left">
+            <h2>留言簿<small>共有{{ gb|length }}位用户发布留言咯~😄😄😄</small></h2>
+            <hr>
+        </div>
+
+        <div align="left">
+            <div class="list-group">
+            {% for a in gb %}
+              <a href="{% url 'guestbook:gb_details' a.id %}" class="list-group-item">
+                <h3 class="list-group-item-heading">
+                    {{ a.id }}、{{ a.title }}
+                </h3>
+                <p class="list-group-item-text">
+                    <h4><small>作者：{{ a.auth }} 发言时间：{{ a.create_time }} 最后更新时间：{{ a.update_time }}</small></h4>
+                    <br><font size="4" face="仿宋">
+                    {{ a.text|truncatechars:100 }}
+                    </font>
+                </p>
+              </a><br>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
