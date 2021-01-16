@@ -22,6 +22,22 @@
 
 
 
+```shell
+apt install python3-pip -y
+// 更换清华大学pip源
+pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip3 install --upgrade pip
+    
+pip3 install virtualenv
+virtualenv venv
+source venv/bin/active
+. venv/bin/deactive 或者 deactive
+
+screen -S oa
+screen -ls
+screen -r oa
+```
+
 ### 3.2 celery部署
 
 
