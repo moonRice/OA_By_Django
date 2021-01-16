@@ -1,7 +1,7 @@
 """OA URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.0/topics/http/urls/
+    https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,7 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
 urlpatterns = [
     # 总后台管理系统
     path('admin/', admin.site.urls),
@@ -28,6 +27,9 @@ urlpatterns = [
 
     # OA主页
     path('oa/', include(('apps.index.urls', 'oa_index'), namespace='oa_index')),
+
+    # 无纸化办公
+    path('wz/', include(('apps.WuZhiHuaBanGong.urls', 'oa_wzhbg'), namespace='oa_wzhbg')),
 
     # 用户
     path('user/', include(('apps.user.urls', 'user'), namespace='user')),

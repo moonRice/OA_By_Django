@@ -1,13 +1,11 @@
+import markdown
 from django.shortcuts import render
 from django.views import View
+
 from .models import guestBook, reply
-from ..user.models import User
-import markdown
 
 
 # Create your views here.
-
-
 class showPage(View):
     def get(self, request):
         gb = guestBook.objects.all()

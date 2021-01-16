@@ -1,0 +1,22 @@
+{% extends 'model_page/quick_start_page_model.html' %}
+{% load static %}
+
+{% block title %}
+    无纸化办公
+{% endblock %}
+
+{% block left_info %}
+    <li role="presentation" class="active"><a href="{% url 'oa_wzhbg:oa_wzhbg' %}"><span
+            class="glyphicon glyphicon-book"></span> 使用说明</a></li>
+    <li role="presentation"><a href="{% url 'oa_wzhbg:oa_wz_sbbx' %}"><span
+            class="glyphicon glyphicon-wrench"></span> 设备报修</a></li>
+    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-th-list"></span>
+        项目申请</a></li>
+{% endblock %}
+
+{% block right_info %}
+    <h3>无纸化办公使用说明</h3>
+    <hr>
+    欢迎使用在线无纸化办公系统!
+    </div>
+{% endblock %}

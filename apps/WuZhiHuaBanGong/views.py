@@ -4,14 +4,15 @@ from django.views import View
 
 # Create your views here.
 
+
 class showIndex(View):
-    """返回个人事务中心页面"""
+    """返回无纸化办公首页"""
 
     def get(self, request):
         context = {
-            'flag': 'idx',
+            'flag': 'wzhbg',
         }
-        return render(request, 'personal_page.html', context)
+        return render(request, 'WuZhiHuaBanGong/idx.html', context)
 
     def post(self, request):
         context = {
@@ -19,15 +20,14 @@ class showIndex(View):
         }
         return render(request, 'ERROR_pages/err_page.html', context)
 
-
-class showOAIndex(View):
-    """返回个人事务中心页面"""
+class showBaoxiuIndex(View):
+    """返回设备报修首页"""
 
     def get(self, request):
         context = {
-            'flag': 'kssy',
+            'flag': 'sbbx',
         }
-        return render(request, 'oa_default_page.html', context)
+        return render(request, 'WuZhiHuaBanGong/SheBeiBaoXiu.html', context)
 
     def post(self, request):
         context = {
