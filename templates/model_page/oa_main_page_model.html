@@ -32,10 +32,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
 {#            菜单#}
-                <li {% if flag == 'kssy' %}class="active"{% endif %}><a href="{% url 'oa_index:oa_index' %}"><span
+                <li {% if flag1 == 'kssy' %}class="active"{% endif %}><a href="{% url 'oa_index:oa_index' %}"><span
                         class="glyphicon glyphicon-th"></span> 快速使用<span class="sr-only">(current)</span></a></li>
 
-                <li {% if flag == 'wzhbg' %}class="active"{% endif %}><a href="{% url 'oa_wzhbg:oa_wzhbg' %}"><span class="glyphicon glyphicon-leaf"></span> 无纸化办公</a></li>
+                <li {% if flag1 == 'wzhbg' %}class="active"{% endif %}><a href="{% url 'oa_wzhbg:oa_wzhbg' %}"><span class="glyphicon glyphicon-leaf"></span> 无纸化办公</a></li>
 {#                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> 设备报修</a></li>#}
                 <li><a href="#"><span class="glyphicon glyphicon-education"></span> 教育在线</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-hdd"></span> 文件管理</a></li>

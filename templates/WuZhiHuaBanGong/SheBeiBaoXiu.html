@@ -1,22 +1,89 @@
-{% extends 'model_page/quick_start_page_model.html' %}
+{% extends 'WuZhiHuaBanGong/wzhbg_model.html' %}
 {% load static %}
 
 {% block title %}
     设备报修
 {% endblock %}
 
-{% block left_info %}
-    <li role="presentation" {% if flag == 'wzhbg' %}class="active"{% endif %}><a href="{% url 'oa_wzhbg:oa_wzhbg' %}"><span
-            class="glyphicon glyphicon-book"></span> 使用说明</a></li>
-    <li role="presentation" {% if flag == 'sbbx' %}class="active"{% endif %}><a href="{% url 'oa_wzhbg:oa_wz_sbbx' %}"><span
-            class="glyphicon glyphicon-wrench"></span> 设备报修</a></li>
-    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-th-list"></span>
-        项目申请</a></li>
-{% endblock %}
 
 {% block right_info %}
-    <h3>设备报修</h3>
-    <hr>
-    欢迎使用在线报修系统!
+
+
+    <div class="container">
+        <h3>设备报修</h3>
+        <hr>
+        欢迎使用在线报修系统!
+        <div class="list-group">
+            <a href="#" class="list-group-item" data-toggle="modal" data-target="#baoxiukuang">
+                <h4 class="list-group-item-heading">快速报修</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+            <a href="#" class="list-group-item active">
+                <h4 class="list-group-item-heading">维修宝典</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+            <a href="#" class="list-group-item disabled">
+                <h4 class="list-group-item-heading">维修宝典</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">维修宝典</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">维修宝典</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">维修宝典</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+        </div>
+
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="baoxiukuang">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div align="center"><br>
+                        <h1 class="modal-title" id="myModalLabel">
+                            欢迎使用在线设备报修系统
+                        </h1>
+                        <hr>
+                    </div>
+                    <div class="modal-body"><h3>
+                        请在报修前查看流程须知：<br>
+                        1、请提前查阅维修宝典，优先排查简单错误；<br>
+                        2、无法解决的问题请点击“填写表单”，我们会及时收到您的报修表单并与您联系。<br></h3>
+                    </div><br>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                            关闭
+                        </button>
+
+                        <button type="button" class="btn btn-success">
+                            维修宝典
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            填写表单
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $('#baoxiukuang').modal({
+                    keyboard: true,
+                    backdrop: 'static',
+                    show: false
+                })
+            });
+            $(function () {
+                $('#baoxiukuang').on('hide.bs.modal', function () {
+                    {#alert('嘿，我听说您喜欢模态框...');#}
+                })
+            });
+        </script>
     </div>
 {% endblock %}

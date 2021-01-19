@@ -10,7 +10,8 @@ class showIndex(View):
 
     def get(self, request):
         context = {
-            'flag': 'wzhbg',
+            'flag1': 'wzhbg',
+            'flag2': 'sysm',
         }
         return render(request, 'WuZhiHuaBanGong/idx.html', context)
 
@@ -25,7 +26,8 @@ class showBaoxiuIndex(View):
 
     def get(self, request):
         context = {
-            'flag': 'sbbx',
+            'flag1': 'wzhbg',
+            'flag2': 'sbbx',
         }
         return render(request, 'WuZhiHuaBanGong/SheBeiBaoXiu.html', context)
 

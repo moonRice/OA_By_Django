@@ -1,0 +1,11 @@
+{% extends 'model_page/quick_start_page_model.html' %}
+{% load static %}
+
+{% block left_info %}
+    <li role="presentation" {% if flag2 == 'sysm' %}class="active"{% endif %}><a href="{% url 'oa_wzhbg:oa_wzhbg' %}"><span
+            class="glyphicon glyphicon-indent-right"></span> 进度概览</a></li>
+    <li role="presentation" {% if flag2 == 'sbbx' %}class="active"{% endif %}><a href="{% url 'oa_wzhbg:oa_wz_sbbx' %}"><span
+            class="glyphicon glyphicon-wrench"></span> 设备报修</a></li>
+    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-th-list"></span>
+        项目申请</a></li>
+{% endblock %}

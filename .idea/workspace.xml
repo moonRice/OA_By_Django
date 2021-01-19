@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,10 +13,17 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="00baf0fe-e7fb-459e-af6e-d3f409833b73" />
+  <component name="JupyterTrust" id="7180e3e9-2971-44f8-9bfc-da7fea74623b" />
   <component name="ProjectId" id="1nHIaEMBDshKuZcbkJTG9NILvFD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,12 +31,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/OA_By_Django" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
-  <component name="RunManager">
-    <configuration name="OA_By_Django" type="Python.DjangoServer" factoryName="Django server">
+  <component name="RunManager" selected="Django Server.OA_By_Django">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="OA_By_Django" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -34,6 +46,29 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OA_By_Django" type="Python.DjangoServer" factoryName="Django server">
+      <module name="OA_By_Django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="settings" />
+      </envs>
+      <option name="SDK_HOME" value="E:\MyProjects\Python\Django\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -49,6 +84,10 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django Server.OA_By_Django" />
+      <item itemvalue="Python.manage" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,7 +97,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611040657364</updated>
-      <workItem from="1611040787153" duration="376000" />
+      <workItem from="1611040787153" duration="954000" />
+      <workItem from="1611041778839" duration="852000" />
+      <workItem from="1611042660346" duration="9352000" />
     </task>
     <servers />
   </component>
@@ -66,9 +107,44 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="165" key="SettingsEditor" timestamp="1611041085537">
+    <state x="413" y="173" width="1094" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611043027340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611041085537" />
+    <state x="413" y="173" width="1094" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611043027340" />
+    <state x="739" y="223" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1611042950943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="223" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611042950943" />
+    <state x="815" y="276" width="803" height="487" key="EnvironmentVariablesDialog" timestamp="1611042887481">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="815" y="276" width="803" height="487" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611042887481" />
+    <state x="995" y="288" key="FileChooserDialogImpl" timestamp="1611042705120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="995" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611042705120" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1611043030990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611043030990" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1611043030989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611043030989" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1611043030989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611043030989" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1611043030989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611043030989" />
+    <state x="460" y="164" key="SettingsEditor" timestamp="1611042798304">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="460" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611042798304" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OA_By_Django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1611042917801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
