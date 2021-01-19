@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/OA.iml" filepath="$PROJECT_DIR$/.idea/OA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OA_By_Django.iml" filepath="$PROJECT_DIR$/.idea/OA_By_Django.iml" />
     </modules>
   </component>
 </project>
