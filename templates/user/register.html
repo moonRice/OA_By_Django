@@ -1,0 +1,32 @@
+{% extends 'model_page/login_model.html' %}
+
+{% block title %}
+    账号注册
+{% endblock %}
+
+{% block right_body %}
+    <p>
+    <form class="layui-form" method="post" action="/user/register">
+        {% csrf_token %}
+        <div align="left">
+            <h2><i class="layui-icon layui-icon-user" style="font-size: 30px;"></i> 注册账号<font color="red"
+                                                                                              size="3"> {{ errmsg }}</font>
+            </h2>
+            <hr>
+        </div>
+        <label class="sr-only">账号</label>
+        <input type="text" name="username" class="form-control" placeholder="请输入用户名" value="{{ back_username }}"/>
+        <br>
+        <label class="sr-only">密码</label>
+        <input type="password" name="password1" class="form-control" placeholder="请输入密码" value="{{ back_password1 }}"/>
+        <br>
+        <label class="sr-only">二次密码</label>
+        <input type="password" name="password2" class="form-control" placeholder="请再次输入密码" value="{{ back_password2 }}"/>
+        <br>
+        <label class="sr-only">邮箱</label>
+        <input type="email" name="email" class="form-control" placeholder="请输入邮箱（能接收激活链接）" value="{{ back_email }}"/>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block">注册</button>
+    </form>
+    </p>
+{% endblock %}
