@@ -21,7 +21,7 @@ class registerPage(View):
 
         # 进行数据校验
         if not username:
-            return render(request, 'user/register.html', {'errmsg': '用户名没有写'})
+            return render(request, 'user/register.html', {'errmsg': '用户名没有写', 'back_email': email})
         else:
             if not password1:
                 return render(request, 'user/register.html',
