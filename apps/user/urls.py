@@ -15,7 +15,8 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
-from .views import loginPage, registerPage, registerHandle
+from .views import loginPage, registerPage
+from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
     # path('admin/', admin.site.urls),

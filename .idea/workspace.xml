@@ -22,21 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/options/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/options/options_development_envirnment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/options/options_production_envirnment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/options/options_testing_envirnment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OA_By_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OA_By_Django.iml" afterDir="false" />
+    <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。">
+      <change afterPath="$PROJECT_DIR$/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/model_page/login_model.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OA_By_Django/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OA_By_Django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/WuZhiHuaBanGong/SheBeiBaoXiu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/WuZhiHuaBanGong/SheBeiBaoXiu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -59,18 +51,21 @@
   </component>
   <component name="JupyterTrust" id="c0aec975-7cd2-46a6-8f23-35db597fa68a" />
   <component name="ProjectId" id="1nHIaEMBDshKuZcbkJTG9NILvFD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/options" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -154,8 +149,16 @@
       <workItem from="1615511558245" duration="749000" />
       <workItem from="1615767354333" duration="6072000" />
       <workItem from="1616133635736" duration="70000" />
-      <workItem from="1616133792441" duration="3442000" />
+      <workItem from="1616133792441" duration="12037000" />
     </task>
+    <task id="LOCAL-00001" summary="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。">
+      <created>1616139165820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616139165821</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +175,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OA_By_Django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1611042917801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
