@@ -15,9 +15,13 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
-from .views import loginPage
+from .views import loginPage, registerPage, registerHandle
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
+    # 展示注册登陆页面
     path('login', loginPage.as_view(), name='login'),
+    path('register', registerPage.as_view(), name='register'),
+    # 注册处理
+    # path('register_handle', registerPage.as_view(), name='register_handle'),
 ]

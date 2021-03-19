@@ -12,32 +12,37 @@
     <div class="container">
         <h3>设备报修</h3>
         <hr>
-        欢迎使用在线报修系统!
-        <div class="list-group">
-            <a href="#" class="list-group-item" data-toggle="modal" data-target="#baoxiukuang">
-                <h4 class="list-group-item-heading">快速报修</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
-            <a href="#" class="list-group-item active">
-                <h4 class="list-group-item-heading">维修宝典</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
-            <a href="#" class="list-group-item disabled">
-                <h4 class="list-group-item-heading">维修宝典</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">维修宝典</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">维修宝典</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">维修宝典</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <img src="{% static 'images/1.png' %}" class="img-rounded">
+                <div class="caption">
+                    <p class="lead">设备报修</p>
+                    <div align="right">
+                        <p>
+                            <small>负责人：管理员</small>
+                            <br>
+                            <a href="#" class="btn btn-primary" role="button" target="_blank" data-toggle="modal"
+                               data-target="#baoxiukuang">填写表单</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <img src="{% static 'images/2.png' %}" class="img-rounded">
+                <div class="caption">
+                    <p class="lead">维修宝典</p>
+                    <div align="right">
+                        <p>
+                            <small>负责人：管理员</small>
+                            <br>
+                            <a href="#" class="btn btn-primary" role="button" target="_blank" data-toggle="modal"
+                               data-target="#weixiubaodian">故障排除</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -54,7 +59,39 @@
                         请在报修前查看流程须知：<br>
                         1、请提前查阅维修宝典，优先排查简单错误；<br>
                         2、无法解决的问题请点击“填写表单”，我们会及时收到您的报修表单并与您联系。<br></h3>
-                    </div><br>
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                            关闭
+                        </button>
+
+                        <button type="button" class="btn btn-success">
+                            维修宝典
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            填写表单
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="weixiubaodian">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div align="center"><br>
+                        <h1 class="modal-title" id="myModalLabel">
+                            欢迎使用在线维修宝典
+                        </h1>
+                        <hr>
+                    </div>
+                    <div class="modal-body"><h3>
+                        请在优先自主排查故障：<br>
+                        1、请提前查阅维修宝典，优先排查简单错误；<br>
+                        2、无法解决的问题请点击“填写表单”，我们会及时收到您的报修表单并与您联系。<br></h3>
+                    </div>
+                    <br>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">
                             关闭
@@ -79,11 +116,24 @@
                     show: false
                 })
             });
-            $(function () {
-                $('#baoxiukuang').on('hide.bs.modal', function () {
+            {#$(function () {#}
+            {#    $('#baoxiukuang').on('hide.bs.modal', function () {#}
                     {#alert('嘿，我听说您喜欢模态框...');#}
+            {#    })#}
+            {#});#}
+
+            $(function () {
+                $('#weixiubaodian').modal({
+                    keyboard: true,
+                    backdrop: 'static',
+                    show: false
                 })
             });
+            {#$(function () {#}
+            {#    $('#weixiubaodian').on('hide.bs.modal', function () {#}
+                    {#alert('嘿，我听说您喜欢模态框...');#}
+            {#    })#}
+            {#});#}
         </script>
     </div>
 {% endblock %}

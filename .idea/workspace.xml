@@ -3,8 +3,41 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="" />
+    <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/options/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/options/options_development_envirnment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/options/options_production_envirnment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/options/options_testing_envirnment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OA_By_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OA_By_Django.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OA_By_Django/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OA_By_Django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/WuZhiHuaBanGong/SheBeiBaoXiu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/WuZhiHuaBanGong/SheBeiBaoXiu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,13 +50,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="7180e3e9-2971-44f8-9bfc-da7fea74623b" />
+  <component name="JupyterTrust" id="c0aec975-7cd2-46a6-8f23-35db597fa68a" />
   <component name="ProjectId" id="1nHIaEMBDshKuZcbkJTG9NILvFD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -33,11 +67,20 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/OA_By_Django" />
-    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/options" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Django Server.OA_By_Django">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\MyProjects\Python\Django\OA_By_Django\options" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\MyProjects\Python\Django\OA_By_Django\templates\user" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django 服务器.OA_By_Django">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="OA_By_Django" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,7 +128,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django Server.OA_By_Django" />
+      <item itemvalue="Django 服务器.OA_By_Django" />
       <item itemvalue="Python.manage" />
     </list>
   </component>
@@ -100,49 +143,35 @@
       <workItem from="1611040787153" duration="954000" />
       <workItem from="1611041778839" duration="852000" />
       <workItem from="1611042660346" duration="9719000" />
+      <workItem from="1611109361320" duration="7734000" />
+      <workItem from="1611313882027" duration="758000" />
+      <workItem from="1611315091052" duration="401000" />
+      <workItem from="1613891132440" duration="43000" />
+      <workItem from="1613891196132" duration="994000" />
+      <workItem from="1613892243934" duration="193000" />
+      <workItem from="1613893569688" duration="304000" />
+      <workItem from="1614250862711" duration="1240000" />
+      <workItem from="1615511558245" duration="749000" />
+      <workItem from="1615767354333" duration="6072000" />
+      <workItem from="1616133635736" duration="70000" />
+      <workItem from="1616133792441" duration="3442000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="413" y="173" width="1094" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611043027340">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="413" y="173" width="1094" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611043027340" />
-    <state x="739" y="223" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1611042950943">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="739" y="223" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611042950943" />
-    <state x="815" y="276" width="803" height="487" key="EnvironmentVariablesDialog" timestamp="1611042887481">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="815" y="276" width="803" height="487" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611042887481" />
-    <state x="995" y="288" key="FileChooserDialogImpl" timestamp="1611042705120">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="995" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611042705120" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1611043030990">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611043030990" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1611043030989">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611043030989" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1611043030989">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611043030989" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1611043030989">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611043030989" />
-    <state x="460" y="164" key="SettingsEditor" timestamp="1611042798304">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="460" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611042798304" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OA_By_Django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1611042917801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
