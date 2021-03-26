@@ -15,7 +15,7 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
-from .views import loginPage, registerPage
+from .views import loginPage, registerPage, LogoutView
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
@@ -23,6 +23,7 @@ urlpatterns = [
     # 展示注册登陆页面
     path('login', loginPage.as_view(), name='login'),
     path('register', registerPage.as_view(), name='register'),
+    path('logout', LogoutView.as_view(), name='logout'),
     # 注册处理
     # path('register_handle', registerPage.as_view(), name='register_handle'),
 ]

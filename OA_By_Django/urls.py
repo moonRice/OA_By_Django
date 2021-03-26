@@ -26,7 +26,7 @@ urlpatterns = [
     path('', include(('apps.index.urls', 'index'), namespace='index')),
 
     # OA主页
-    path('oa/', include(('apps.index.urls', 'oa_index'), namespace='oa_index')),
+    # path('', include(('apps.index.urls', 'oa_index'), namespace='oa_index')),
 
     # 无纸化办公
     path('wz/', include(('apps.WuZhiHuaBanGong.urls', 'oa_wzhbg'), namespace='oa_wzhbg')),

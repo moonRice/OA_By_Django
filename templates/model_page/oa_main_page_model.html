@@ -25,18 +25,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">OA</a>
+            <a class="navbar-brand" href="{% url 'index:oa_index' %}">OA</a>
         </div>
 
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-{#            菜单#}
-                <li {% if flag1 == 'kssy' %}class="active"{% endif %}><a href="{% url 'oa_index:oa_index' %}"><span
+                {#            菜单#}
+                <li {% if flag1 == 'kssy' %}class="active"{% endif %}><a href="{% url 'index:oa_index' %}"><span
                         class="glyphicon glyphicon-th"></span> 快速使用<span class="sr-only">(current)</span></a></li>
 
-                <li {% if flag1 == 'wzhbg' %}class="active"{% endif %}><a href="{% url 'oa_wzhbg:oa_wzhbg' %}"><span class="glyphicon glyphicon-leaf"></span> 无纸化办公</a></li>
-{#                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> 设备报修</a></li>#}
+                <li {% if flag1 == 'wzhbg' %}class="active"{% endif %}><a href="{% url 'oa_wzhbg:oa_wzhbg' %}"><span
+                        class="glyphicon glyphicon-leaf"></span> 无纸化办公</a></li>
+                {#                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> 设备报修</a></li>#}
                 <li><a href="#"><span class="glyphicon glyphicon-education"></span> 教育在线</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-hdd"></span> 文件管理</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> 云服务</a></li>
@@ -53,30 +54,54 @@
                 <button type="submit" class="btn btn-default">功能搜索</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">游客，欢迎您！</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><span class="glyphicon glyphicon-cog"></span> 个人中心 <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-header">社交</li>
-                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> 我的消息 <span
-                                class="badge">6</span></a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> 发送消息</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 好友列表(5/7)</a></li>
-
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">账号</li>
-                        <li><a href="#"><span class="glyphicon glyphicon-globe"></span> 我的资料</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-refresh"></span> 修改密码</a></li>
-
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">系统</li>
-                        <li><a href="/admin" target="_blank"><span class="glyphicon glyphicon-th-large"></span> 进入后台</a>
+                <li>
+                    {% if user.username == 'DoesNotExist' %}
+                        <a href="{% url 'user:login' %}" target="_blank">游客，请登陆后使用！</a>
                         </li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 退出登录</a></li>
-                    </ul>
-                </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false"><span class="glyphicon glyphicon-cog"></span> 设置中心 <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">系统</li>
+                                <li><a href="/admin" target="_blank"><span class="glyphicon glyphicon-th-large"></span>
+                                    进入后台</a>
+                                </li>
+                                <li><a href="{% url 'user:login' %}"><span class="glyphicon glyphicon-log-out"></span>
+                                    前往登录</a></li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <a href="#" target="_blank">{{ user.username }}，欢迎您！</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false"><span class="glyphicon glyphicon-cog"></span> 个人中心 <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">社交</li>
+                                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> 我的消息 <span
+                                        class="badge">6</span></a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-send"></span> 发送消息</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 好友列表(5/7)</a></li>
+
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">账号</li>
+                                <li><a href="#"><span class="glyphicon glyphicon-globe"></span> 我的资料</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-refresh"></span> 修改密码</a></li>
+
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">系统</li>
+                                <li><a href="/admin" target="_blank"><span class="glyphicon glyphicon-th-large"></span>
+                                    进入后台</a>
+                                </li>
+                                <li><a href="{% url 'user:logout' %}"><span class="glyphicon glyphicon-log-out"></span>
+                                    退出登录</a></li>
+                            </ul>
+                        </li>
+                    {% endif %}
             </ul>
         </div>
     </div>

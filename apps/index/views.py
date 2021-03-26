@@ -3,6 +3,8 @@ from django.views import View
 
 
 # Create your views here.
+from apps.user.models import User
+
 
 class showIndex(View):
     """返回个人事务中心页面"""
@@ -21,11 +23,19 @@ class showIndex(View):
 
 
 class showOAIndex(View):
-    """返回个人事务中心页面"""
+    """返回OA页面"""
 
     def get(self, request):
+        # username = request.COOKIES.get('username')
+        user = request.user
+
+        try:
+            user = User.objects.get(username=user)
+        except User.DoesNotExist:
+            user.username = 'DoesNotExist'
         context = {
             'flag': 'kssy',
+            'user': user
         }
         return render(request, 'oa_default_page.html', context)
 

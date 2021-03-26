@@ -23,7 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="注册模块完成，并可以在登录时识别激活与否&#10;【实现】&#10;1、可以注册了，并且新注册帐户能成功设置成未激活状态；&#10;2、登录模块正常，登陆成功可以正确跳转到OA主页；&#10;3、注意账户激活判定问题；&#10;【预期】&#10;4、准备配置celery+redis实现邮件账户激活；&#10;5、配置登录装饰器；&#10;6、记住用户名。">
+      <change beforePath="$PROJECT_DIR$/.idea/OA_By_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OA_By_Django.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OA_By_Django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/WuZhiHuaBanGong/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WuZhiHuaBanGong/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/chats/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/chats/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/options/options_development_envirnment.py" beforeDir="false" afterPath="$PROJECT_DIR$/options/options_development_envirnment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +69,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/options" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -145,6 +158,11 @@
       <workItem from="1615767354333" duration="6072000" />
       <workItem from="1616133635736" duration="70000" />
       <workItem from="1616133792441" duration="14058000" />
+      <workItem from="1616221955716" duration="5424000" />
+      <workItem from="1616327922573" duration="635000" />
+      <workItem from="1616674599682" duration="1374000" />
+      <workItem from="1616755316655" duration="1479000" />
+      <workItem from="1616758958920" duration="3827000" />
     </task>
     <task id="LOCAL-00001" summary="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。">
       <created>1616139165820</created>

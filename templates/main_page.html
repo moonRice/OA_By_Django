@@ -12,48 +12,52 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <span class="glyphicon glyphicon-globe"></span>
-                </a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><div id="titleTime">正在加载当前时间。。。</div></a></li>
-                <script type="text/javascript">
-                        setInterval(function(){
-                            var date = new Date();
-                            var year = date.getFullYear();    //获取当前年份
-                            var mon = date.getMonth()+1;      //获取当前月份
-                            var da = date.getDate();          //获取当前日
-                            var day = date.getDay();          //获取当前星期几
-                            var h = date.getHours();          //获取小时
-                            var m = date.getMinutes();        //获取分钟
-                            var s = date.getSeconds();        //获取秒
-                            var d = document.getElementById('titleTime');
-                              d.innerHTML='现在时间是'+year+'年'+mon+'月'+da+'日'+'星期'+day+' '+h+':'+m+':'+s;
-                        },1000)
-                    </script>
-            </ul>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-globe"></span>
+            </a>
         </div>
-    </nav>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">
+                <div id="titleTime">正在加载当前时间。。。</div>
+            </a></li>
+            <script type="text/javascript">
+                setInterval(function () {
+                    var date = new Date();
+                    var year = date.getFullYear();    //获取当前年份
+                    var mon = date.getMonth() + 1;      //获取当前月份
+                    var da = date.getDate();          //获取当前日
+                    var day = date.getDay();          //获取当前星期几
+                    var h = date.getHours();          //获取小时
+                    var m = date.getMinutes();        //获取分钟
+                    var s = date.getSeconds();        //获取秒
+                    var d = document.getElementById('titleTime');
+                    d.innerHTML = '现在时间是' + year + '年' + mon + '月' + da + '日' + '星期' + day + ' ' + h + ':' + m + ':' + s;
+                }, 1000)
+            </script>
+        </ul>
+    </div>
+</nav>
 
-    <div class="container">
-        <div class="page-header">
-            <h1>个人中心</h1>
-        </div>
-        <div class="alert alert-success alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>消息：</strong> 请注意，我是消息框！<a class="alert-link" href="#">查看详情</a>
-        </div>
+<div class="container">
+    <div class="page-header">
+        <h1>个人中心</h1>
+    </div>
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        <strong>消息：</strong> 请注意，我是消息框！<a class="alert-link" href="#">查看详情</a>
+    </div>
 
-        <div class="alert alert-danger alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>警告：</strong> 请注意，我是警告框！<a class="alert-link" href="#">查看详情</a>
-        </div>
+    <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        <strong>警告：</strong> 请注意，我是警告框！<a class="alert-link" href="#">查看详情</a>
+    </div>
 
-        <div class="container-fluid">
+    <div class="container-fluid">
         <div class="col-md-8">
             <div class="panel panel-primary">
                 <a class="list-group-item active">
@@ -152,7 +156,8 @@
                 <a class="list-group-item active">
                     消息列表<span class="badge">8</span>
                 </a>
-                <a href="#" class="list-group-item"><span class="label label-default">置顶</span><font color="red"> 欢迎你的加入！:)</font></a>
+                <a href="#" class="list-group-item"><span class="label label-default">置顶</span><font color="red">
+                    欢迎你的加入！:)</font></a>
                 <a href="#" class="list-group-item">员工守则须知确认书</a>
                 <a href="#" class="list-group-item">今日分配的任务</a>
                 <a href="#" class="list-group-item">邮件系统开通</a>
@@ -161,200 +166,211 @@
                 <a href="#" class="list-group-item">查看更多 >></a>
             </div>
         </div>
-        </div>
-        <div class="col-md-4">
-{#            <div id="main"></div>#}
+    </div>
+    <div class="col-md-4">
+        {#            <div id="main"></div>#}
 
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          栏目 #1
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。
-      </div>
-        <div class="panel-footer">作者：李白</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          栏目 #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。
-      </div>
-        <div class="panel-footer">作者：李白</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          栏目 #3
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。
-      </div>
-        <div class="panel-footer">作者：李白</div>
-    </div>
-  </div>
-</div>
-
-            <script src="{% static 'js/myJS/calendar.js' %}"></script>
-            <link rel="stylesheet" href="{% static 'css/myCSS/calendar.css' %}">
-
-            <div id="CalendarMain">
-                <div id="title">
-                    <a class="selectBtn month" href="javascript:" onClick="CalendarHandler.CalculateLastMonthDays();"><</a>
-                    <a class="selectBtn selectYear" href="javascript:" onClick="CalendarHandler.CreateSelectYear(CalendarHandler.showYearStart);">2000年</a>
-                    <a class="selectBtn selectMonth" onClick="CalendarHandler.CreateSelectMonth()">1月</a>
-                    <a class="selectBtn nextMonth" href="javascript:" onClick="CalendarHandler.CalculateNextMonthDays();">></a>
-                    <a class="selectBtn currentDay" href="javascript:" onClick="CalendarHandler.CreateCurrentCalendar(0,0,0);">今天</a>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                           aria-expanded="true" aria-controls="collapseOne">
+                            栏目 #1
+                        </a>
+                    </h4>
                 </div>
-                    <div id="context">
-                        <div class="week">
-                            <h3> 一 </h3>
-                            <h3> 二 </h3>
-                            <h3> 三 </h3>
-                            <h3> 四 </h3>
-                            <h3> 五 </h3>
-                            <h3> 六 </h3>
-                            <h3> 日 </h3>
-                        </div>
-                        <div id="center">
-                            <div id="centerMain">
-                            <div id="selectYearDiv"></div>
-                            <div id="centerCalendarMain">
-                                <div id="Container"></div>
-                            </div>
-                            <div id="selectMonthDiv"></div>
-                            </div>
-                        </div>
-                    <div id="foots"><a id="footNow">正在加载时间。。。</a></div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。
+                    </div>
+                    <div class="panel-footer">作者：李白</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            栏目 #2
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。
+                    </div>
+                    <div class="panel-footer">作者：李白</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            栏目 #3
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。
+                    </div>
+                    <div class="panel-footer">作者：李白</div>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-8">
-            <div id="myDemoChart" style="width: 800px;height:610px;"></div>
-            <script src="{% static 'js/myJS/mainPage.js' %}"></script>
+        <script src="{% static 'js/myJS/calendar.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'css/myCSS/calendar.css' %}">
+
+        <div id="CalendarMain">
+            <div id="title">
+                <a class="selectBtn month" href="javascript:" onClick="CalendarHandler.CalculateLastMonthDays();"><</a>
+                <a class="selectBtn selectYear" href="javascript:"
+                   onClick="CalendarHandler.CreateSelectYear(CalendarHandler.showYearStart);">2000年</a>
+                <a class="selectBtn selectMonth" onClick="CalendarHandler.CreateSelectMonth()">1月</a>
+                <a class="selectBtn nextMonth" href="javascript:"
+                   onClick="CalendarHandler.CalculateNextMonthDays();">></a>
+                <a class="selectBtn currentDay" href="javascript:"
+                   onClick="CalendarHandler.CreateCurrentCalendar(0,0,0);">今天</a>
+            </div>
+            <div id="context">
+                <div class="week">
+                    <h3> 一 </h3>
+                    <h3> 二 </h3>
+                    <h3> 三 </h3>
+                    <h3> 四 </h3>
+                    <h3> 五 </h3>
+                    <h3> 六 </h3>
+                    <h3> 日 </h3>
+                </div>
+                <div id="center">
+                    <div id="centerMain">
+                        <div id="selectYearDiv"></div>
+                        <div id="centerCalendarMain">
+                            <div id="Container"></div>
+                        </div>
+                        <div id="selectMonthDiv"></div>
+                    </div>
+                </div>
+                <div id="foots"><a id="footNow">正在加载时间。。。</a></div>
+            </div>
         </div>
-
-
-        <h1>我的事务事项</h1>
-        <span class="label label-success">已完成1项</span>
-        <span class="label label-warning">进行中1项</span>
-        <span class="label label-danger">被驳回1项</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-primary">Primary</span>
-        <span class="label label-success">Success</span>
-        <span class="label label-info">Info</span>
-        <span class="label label-warning">Warning</span>
-        <span class="label label-danger">Danger</span>
-        <hr>
-        <table class="table table-hover table-responsive">
-            <tr>
-                <td><strong>编号</strong></td>
-                <td><strong>事项内容</strong></td>
-                <td><strong>进度</strong></td>
-                <td><strong>备注</strong></td>
-            </tr>
-
-            <tr class="success">
-                <td width="100">A001</td>
-                <td width="600">请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                            100%
-                        </div>
-                    </div>
-                </td>
-                <td width="200">审批通过</td>
-            </tr>
-
-            <tr class="warning">
-                <td>A002</td>
-                <td>请假申请</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                            50%
-                        </div>
-                    </div>
-                </td>
-                <td>正在审批</td>
-            </tr>
-
-            <tr>
-                <td>A003</td>
-                <td>请假申请</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                            60%
-                        </div>
-                    </div>
-                </td>
-                <td>正在审批</td>
-            </tr>
-
-            <tr>
-                <td>A004</td>
-                <td>请假申请</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                            60%
-                        </div>
-                    </div>
-                </td>
-                <td>正在审批</td>
-            </tr>
-
-            <tr>
-                <td>A005</td>
-                <td>请假申请</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                            60%
-                        </div>
-                    </div>
-                </td>
-                <td>正在审批</td>
-            </tr>
-
-            <tr class="danger">
-                <td>A006</td>
-                <td>请假申请</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                            20%
-                        </div>
-                    </div>
-                </td>
-                <td>正在审批</td>
-            </tr>
-        </table>
-
-
     </div>
 
+    <div class="col-md-8">
+        <div id="myDemoChart" style="width: 800px;height:610px;"></div>
+        <script src="{% static 'js/myJS/mainPage.js' %}"></script>
+    </div>
+
+
+    <h1>我的事务事项</h1>
+    <span class="label label-success">已完成1项</span>
+    <span class="label label-warning">进行中1项</span>
+    <span class="label label-danger">被驳回1项</span>
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+    <hr>
+    <table class="table table-hover table-responsive">
+        <tr>
+            <td><strong>编号</strong></td>
+            <td><strong>事项内容</strong></td>
+            <td><strong>进度</strong></td>
+            <td><strong>备注</strong></td>
+        </tr>
+
+        <tr class="success">
+            <td width="100">A001</td>
+            <td width="600">请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请请假申请</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                        100%
+                    </div>
+                </div>
+            </td>
+            <td width="200">审批通过</td>
+        </tr>
+
+        <tr class="warning">
+            <td>A002</td>
+            <td>请假申请</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                        50%
+                    </div>
+                </div>
+            </td>
+            <td>正在审批</td>
+        </tr>
+
+        <tr>
+            <td>A003</td>
+            <td>请假申请</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        60%
+                    </div>
+                </div>
+            </td>
+            <td>正在审批</td>
+        </tr>
+
+        <tr>
+            <td>A004</td>
+            <td>请假申请</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        60%
+                    </div>
+                </div>
+            </td>
+            <td>正在审批</td>
+        </tr>
+
+        <tr>
+            <td>A005</td>
+            <td>请假申请</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 60%;">
+                        60%
+                    </div>
+                </div>
+            </td>
+            <td>正在审批</td>
+        </tr>
+
+        <tr class="danger">
+            <td>A006</td>
+            <td>请假申请</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                        20%
+                    </div>
+                </div>
+            </td>
+            <td>正在审批</td>
+        </tr>
+    </table>
+
+
+</div>
 
 
 </body>

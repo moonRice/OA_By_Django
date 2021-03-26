@@ -20,5 +20,5 @@ from .views import showIndex, showOAIndex
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', showIndex.as_view(), name='index'),
-    path('index', showOAIndex.as_view(), name='oa_index'),
+    path('oa/', showOAIndex.as_view(), name='oa_index'),
 ]

@@ -15,10 +15,12 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
+from django.contrib.auth.decorators import login_required
+
 from .views import showIndex, showBaoxiuIndex
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('index', showIndex.as_view(), name='oa_wzhbg'),
-    path('sbbx', showBaoxiuIndex.as_view(), name='oa_wz_sbbx'),
+    path('index', login_required(showIndex.as_view()), name='oa_wzhbg'),
+    path('sbbx', login_required(showBaoxiuIndex.as_view()), name='oa_wz_sbbx'),
 ]

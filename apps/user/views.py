@@ -64,8 +64,8 @@ class registerPage(View):
 
         # 返回应答，跳转到首页
 
-        return render(request, 'user/login.html')
-        # redirect(reverse('user:register'))
+        # return render(request, 'user/login.html')
+        return redirect(reverse('user:login'))
 
 
 """登录业务代码"""
@@ -109,14 +109,20 @@ class loginPage(View):
 
                 # 登陆装饰器
                 # 获取登陆后所要跳转的地址
-                next_url = request.GET.get('next', reverse('oa_index:oa_index'))
+                ctx = {
+                    'user': user
+                }
+                next_url = request.GET.get('next', reverse('index:oa_index'))
+                # now_time = times()
+                # print("[" + now_time + "]" + username + "登陆了。")
+                print(username + "登陆了")
 
                 # 假若这个人故意删除next后面的地址，则next_URL = None
                 # 后面的response就会报错
                 # 所以在最后要设置默认跳转，以防小人捣乱
 
                 # 跳转到接收到的next值
-                response = redirect(next_url)  # HttpResponseRedirect
+                response = redirect(next_url, ctx)  # HttpResponseRedirect
 
                 # 判断是否需要记住用户名
                 remember = request.POST.get('remember')
@@ -143,8 +149,12 @@ class LogoutView(View):
 
     def get(self, request):
         """退出登录"""
+        # now_time = times()
+        user = request.user
         # 清除用户的session信息
         logout(request)
+        # print("[" + str(now_time) + "]" + user + "退出登录")
+        print(user.username + "退出登录")
 
         # 跳转到首页
-        return redirect(reverse('oa_index:oa_index'))
+        return redirect(reverse('index:oa_index'))

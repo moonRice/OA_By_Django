@@ -15,12 +15,13 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
+from django.contrib.auth.decorators import login_required
 
 from . import views
 from .views import showPage
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('showAllGusetbooks', showPage.as_view(), name='showAll'),
-    path('<int:gb_id>', views.gb_details, name='gb_details'),
+    path('showAllGusetbooks', login_required(showPage.as_view()), name='showAll'),
+    path('<int:gb_id>', login_required(views.gb_details), name='gb_details'),
 ]
