@@ -22,20 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="注册模块完成，并可以在登录时识别激活与否&#10;【实现】&#10;1、可以注册了，并且新注册帐户能成功设置成未激活状态；&#10;2、登录模块正常，登陆成功可以正确跳转到OA主页；&#10;3、注意账户激活判定问题；&#10;【预期】&#10;4、准备配置celery+redis实现邮件账户激活；&#10;5、配置登录装饰器；&#10;6、记住用户名。">
-      <change beforePath="$PROJECT_DIR$/.idea/OA_By_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OA_By_Django.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="注册登录完整闭环已完成&#10;1、OA首页对应显示完成；&#10;2、注册登录闭环完成；&#10;预期：&#10;3、Celery完成邮件发送以及账号激活；&#10;4、Session放进Redis。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OA_By_Django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/WuZhiHuaBanGong/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WuZhiHuaBanGong/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/chats/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/chats/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/index/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/options/options_development_envirnment.py" beforeDir="false" afterPath="$PROJECT_DIR$/options/options_development_envirnment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/options" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -162,7 +150,12 @@
       <workItem from="1616327922573" duration="635000" />
       <workItem from="1616674599682" duration="1374000" />
       <workItem from="1616755316655" duration="1479000" />
-      <workItem from="1616758958920" duration="3827000" />
+      <workItem from="1616758958920" duration="4161000" />
+      <workItem from="1617239235474" duration="46000" />
+      <workItem from="1617239326796" duration="2331000" />
+      <workItem from="1617260066246" duration="1125000" />
+      <workItem from="1617261990069" duration="11000" />
+      <workItem from="1617323088026" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。">
       <created>1616139165820</created>
@@ -178,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616149012224</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="注册登录完整闭环已完成&#10;1、OA首页对应显示完成；&#10;2、注册登录闭环完成；&#10;预期：&#10;3、Celery完成邮件发送以及账号激活；&#10;4、Session放进Redis。">
+      <created>1616763005943</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616763005943</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +200,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。" />
     <MESSAGE value="注册模块完成，并可以在登录时识别激活与否&#10;【实现】&#10;1、可以注册了，并且新注册帐户能成功设置成未激活状态；&#10;2、登录模块正常，登陆成功可以正确跳转到OA主页；&#10;3、注意账户激活判定问题；&#10;【预期】&#10;4、准备配置celery+redis实现邮件账户激活；&#10;5、配置登录装饰器；&#10;6、记住用户名。" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册模块完成，并可以在登录时识别激活与否&#10;【实现】&#10;1、可以注册了，并且新注册帐户能成功设置成未激活状态；&#10;2、登录模块正常，登陆成功可以正确跳转到OA主页；&#10;3、注意账户激活判定问题；&#10;【预期】&#10;4、准备配置celery+redis实现邮件账户激活；&#10;5、配置登录装饰器；&#10;6、记住用户名。" />
+    <MESSAGE value="注册登录完整闭环已完成&#10;1、OA首页对应显示完成；&#10;2、注册登录闭环完成；&#10;预期：&#10;3、Celery完成邮件发送以及账号激活；&#10;4、Session放进Redis。" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册登录完整闭环已完成&#10;1、OA首页对应显示完成；&#10;2、注册登录闭环完成；&#10;预期：&#10;3、Celery完成邮件发送以及账号激活；&#10;4、Session放进Redis。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OA_By_Django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1611042917801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
