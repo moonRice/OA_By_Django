@@ -1,8 +1,10 @@
 asgiref==3.3.1
+colorama==0.4.4
 Django==3.1.7
+django-froala-editor==3.2.2
 django-mdeditor==0.1.18
-django-simpleui==2021.2
-Markdown==3.3.3
+django-simpleui==2021.4.1
+Markdown==3.3.4
 PyMySQL==1.0.2
 pytz==2021.1
 sqlparse==0.4.1
