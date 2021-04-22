@@ -22,64 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="注册登录完整闭环已完成&#10;1、OA首页对应显示完成；&#10;2、注册登录闭环完成；&#10;预期：&#10;3、Celery完成邮件发送以及账号激活；&#10;4、Session放进Redis。">
-      <change afterPath="$PROJECT_DIR$/ExtraFunction/CMDColor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraFunction/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/migrations/0002_auto_20210421_1147.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/migrations/0003_tongji.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/migrations/0004_auto_20210421_2125.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/migrations/0005_tongjicount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/migrations/0006_auto_20210421_2239.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user/migrations/0003_bankaccount_bankdepartment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user/migrations/0004_auto_20210421_1508.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.common.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.common.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.simple.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.simple.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.simple.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/extension/bmap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/extension/bmap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/extension/bmap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/vue.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/TPYM/1001.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/XMMB/1001.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/cjxtp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/ckmbwj.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/cktpxm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/idx.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/ok.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/vs_left_info_model.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TouPiaoXiTong/zssj.html" afterDir="false" />
+    <list default="true" id="30079720-0163-4b1c-b935-4426d4a98ec7" name="Default Changelist" comment="简易能用的投票系统上线啦！&#10;完成：&#10;1、这个投票系统能用，能投票还能查看数据；&#10;2、我们提升了全新的log视觉体验，看着更爽哦；&#10;预期：&#10;3、修复登陆装饰器跳转问题；&#10;4、Tensorflow.js初探索。">
+      <change afterPath="$PROJECT_DIR$/options/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/logo.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OA_By_Django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OA_By_Django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/options/options_development_envirnment.py" beforeDir="false" afterPath="$PROJECT_DIR$/options/options_development_envirnment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/model_page/login_model.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model_page/login_model.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/personal_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -238,7 +189,7 @@
       <workItem from="1618965739985" duration="155000" />
       <workItem from="1618965926471" duration="10270000" />
       <workItem from="1618994146607" duration="13753000" />
-      <workItem from="1619051171082" duration="5913000" />
+      <workItem from="1619051171082" duration="7669000" />
     </task>
     <task id="LOCAL-00001" summary="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。">
       <created>1616139165820</created>
@@ -268,11 +219,28 @@
       <option name="project" value="LOCAL" />
       <updated>1617456158187</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="简易能用的投票系统上线啦！&#10;完成：&#10;1、这个投票系统能用，能投票还能查看数据；&#10;2、我们提升了全新的log视觉体验，看着更爽哦；&#10;预期：&#10;3、修复登陆装饰器跳转问题；&#10;4、Tensorflow.js初探索。">
+      <created>1619058337637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619058337637</updated>
+    </task>
+    <task id="LOCAL-00006" summary="更新了requirements文件">
+      <created>1619058473336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619058473336</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -291,7 +259,11 @@
     <MESSAGE value="注册模块完成&#10;1、可以注册了；&#10;2、准备配置celery+redis实现账户激活。" />
     <MESSAGE value="注册模块完成，并可以在登录时识别激活与否&#10;【实现】&#10;1、可以注册了，并且新注册帐户能成功设置成未激活状态；&#10;2、登录模块正常，登陆成功可以正确跳转到OA主页；&#10;3、注意账户激活判定问题；&#10;【预期】&#10;4、准备配置celery+redis实现邮件账户激活；&#10;5、配置登录装饰器；&#10;6、记住用户名。" />
     <MESSAGE value="注册登录完整闭环已完成&#10;1、OA首页对应显示完成；&#10;2、注册登录闭环完成；&#10;预期：&#10;3、Celery完成邮件发送以及账号激活；&#10;4、Session放进Redis。" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册登录完整闭环已完成&#10;1、OA首页对应显示完成；&#10;2、注册登录闭环完成；&#10;预期：&#10;3、Celery完成邮件发送以及账号激活；&#10;4、Session放进Redis。" />
+    <MESSAGE value="简易能用的投票系统上线啦！&#10;完成：&#10;1、这个投票系统能用，能投票还能查看数据；&#10;2、我们提升了全新的log视觉体验，看着更爽哦；&#10;预期：&#10;3、修复登陆装饰器跳转问题；&#10;4、Tensorflow.js初探索。" />
+    <MESSAGE value="更新了requirements文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了requirements文件" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OA_By_Django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1611042917801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
