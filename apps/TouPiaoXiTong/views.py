@@ -72,11 +72,19 @@ class showModels(View):
     def get(self, request):
         color = Colored()
         current_time = datetime.datetime.now()
+        user = request.user
 
+        try:
+            LXMB.objects.all()
+        except LXMB.DoesNotExist:
+            print(color.blue('[' + str(current_time) + '] --> ' + user.username + '打开了票件模板的页面，可惜里面并没有模板文件'))
+            return render(request, 'TouPiaoXiTong/ckmbwj.html', {
+                'msg': '暂无模板文件，请在后台创建'
+            })
         all_models = LXMB.objects.all()
         lxmc_list = []
         for a in all_models:
-            b = XMLX.objects.get(LXID=a.LXID_id)
+            b = XMLX.objects.get(LXID=a.MBID)
             lxmc_list.append(b)
 
         context = {
@@ -85,7 +93,7 @@ class showModels(View):
             'lxmc_list': lxmc_list,
         }
         # username = request.COOKIES.get('username')
-        user = request.user
+
         print(color.blue('[' + str(current_time) + '] --> ' + user.username + '打开了票件模板的页面'))
         return render(request, 'TouPiaoXiTong/ckmbwj.html', context)
 
@@ -143,8 +151,20 @@ def tongjiFunc(request):
     else:
         print(color.yellow(
             '[' + str(current_time) + '] --> ' + str(username) + '选择了' + str(XXSJ.objects.get(XXID=choice))))
-        tj = tongji(XXID=(XXSJ.objects.get(XXID=choice)),
-                    TPR=(BankAccount.objects.get(account=(User.objects.get(username=username)))), TPSJ=current_time)
+        try:
+            tongjiCount.objects.get(XXID=(XXSJ.objects.get(XXID=choice)))
+        except tongjiCount.DoesNotExist:
+            data = tongjiCount(XXID=(XXSJ.objects.get(XXID=choice)), COUNT=0)
+            data.save()
+            data2 = tongjiCount.objects.get(XXID=(XXSJ.objects.get(XXID=choice)))
+            temp = data2.COUNT
+            data2.COUNT = temp + 1
+            data2.save()
+            print(color.blue('[' + str(current_time) + '] --> ' + str(username) + '的选择在数据库中是新创建的，并且成功写入了数据库'))
+            # print(choice)
+            return render(request, 'TouPiaoXiTong/ok.html', {
+                'msg': '投票成功'
+            })
         data = tongjiCount.objects.get(XXID=(XXSJ.objects.get(XXID=choice)))
         temp = data.COUNT
         data.COUNT = temp + 1

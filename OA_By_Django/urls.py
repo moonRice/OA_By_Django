@@ -43,6 +43,6 @@ urlpatterns = [
     path('guestbook/', include(('apps.chats.urls', 'guestbook'), namespace='guestbook')),
 
     # 投票系统
-    path('guestbook/', include(('apps.TouPiaoXiTong.urls', 'TouPiaoXiTong'), namespace='VoteSystem')),
+    path('VoteSystem/', include(('apps.TouPiaoXiTong.urls', 'TouPiaoXiTong'), namespace='VoteSystem')),
 
 ]

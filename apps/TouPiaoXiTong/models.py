@@ -1,14 +1,16 @@
 from django.db import models
 import django.utils.timezone as timezone
 from froala_editor.fields import FroalaField
+from mdeditor.fields import MDTextField
 
 # Create your models here.
+
 from apps.user.models import User, BankAccount, BankDepartment
 
 
 class XXSJ(models.Model):
     XXID = models.IntegerField(verbose_name='选项ID')
-    XXSJ = FroalaField(verbose_name='选项内容')
+    XXSJ = MDTextField(verbose_name='选项内容')
 
     def __str__(self):
         return '%s' % self.XXSJ
@@ -21,7 +23,7 @@ class XXSJ(models.Model):
 
 class XMSJ(models.Model):
     SJID = models.IntegerField(verbose_name='数据ID')
-    WT = FroalaField(verbose_name='问题内容')
+    WT = MDTextField(verbose_name='问题内容')
     XXID = models.ManyToManyField(XXSJ, verbose_name='选项ID', help_text='对应的选项ID')
 
     def __str__(self):
@@ -58,9 +60,9 @@ class TPXM(models.Model):
     CYR = models.ManyToManyField(BankDepartment,
                                  verbose_name='参与人员',
                                  help_text='选择可以参与投票的人')
-    SJID = models.ManyToManyField(XMSJ,
-                                  verbose_name='投票内容',
-                                  help_text='与问题数据进行对接')
+    SJID = models.ForeignKey(XMSJ, on_delete=models.DO_NOTHING,
+                             verbose_name='投票内容',
+                             help_text='与问题数据进行对接')
 
     def __str__(self):
         return '%s' % self.XMMC
@@ -103,7 +105,7 @@ class LXMB(models.Model):
     LXID = models.ForeignKey(XMLX, on_delete=models.DO_NOTHING,
                              verbose_name='投票类型ID')
     MBID = models.IntegerField(verbose_name='模板ID')
-    MBNR = FroalaField(verbose_name='模板代码')
+    MBNR = FroalaField(verbose_name='模板内容')
     BZXX = models.CharField(max_length=255, verbose_name='备注信息')
 
     def __str__(self):
