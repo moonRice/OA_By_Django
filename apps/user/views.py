@@ -1,13 +1,17 @@
 import re
+import datetime
 
 from django.contrib.auth import login, logout, authenticate
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views import View
 from apps.user.models import User
+from ExtraFunction.CMDColor import Colored
 
 
 # Create your views here.
+
+
 class registerPage(View):
     def get(self, request):
         return render(request, 'user/register.html')
@@ -82,14 +86,21 @@ class loginPage(View):
             username = ''
             checked = ''
 
+        context = {
+            'username': username,
+            'checked': checked,
+        }
+
         # 使用模板
-        return render(request, 'user/login.html', {'username': username, 'checked': checked})
+        return render(request, 'user/login.html', context)
 
     def post(self, request):
+        current_time = datetime.datetime.now()
         """登录校验"""
         # 接收数据
         username = request.POST.get('username')
         password = request.POST.get('password')
+        nextURL = request.POST.get('next')
 
         # 校验数据
         if not all([username, password]):
@@ -115,7 +126,9 @@ class loginPage(View):
                 next_url = request.GET.get('next', reverse('index:oa_index'))
                 # now_time = times()
                 # print("[" + now_time + "]" + username + "登陆了。")
-                print(username + "登陆了")
+                color = Colored()
+                print(color.green('[' + str(current_time) + '] --> ' + username + "登陆了"))
+                print(color.green('[' + str(current_time) + '] --> ' + "是即将跳转的URL"))
 
                 # 假若这个人故意删除next后面的地址，则next_URL = None
                 # 后面的response就会报错
@@ -130,10 +143,15 @@ class loginPage(View):
                 if remember == 'on':
                     # 记住用户名
                     response.set_cookie('username', username, max_age=7 * 24 * 3600)
+                    print(color.green('[' + str(current_time) + '] --> ' + username + '的登录信息已经被写进了Cookies'))
                 else:
                     response.delete_cookie('username')
+                    print(
+                        color.red('[' + str(current_time) + '] --> ' + username + '的登录信息已经从Cookies中移除，原因是用户未选择“记住用户名”'))
 
                 # 返回response
+                # response.set_cookie('username', username, max_age=7 * 24 * 3600)
+                # print(username + '的登录信息已经被写进了Cookies')
                 return response
             else:
                 # 用户未激活
@@ -148,13 +166,22 @@ class LogoutView(View):
     """退出登录"""
 
     def get(self, request):
+        current_time = datetime.datetime.now()
+        color = Colored()
         """退出登录"""
         # now_time = times()
         user = request.user
         # 清除用户的session信息
         logout(request)
         # print("[" + str(now_time) + "]" + user + "退出登录")
-        print(user.username + "退出登录")
+        print(color.green(user.username + "退出登录"))
+
+        if 'username' in request.COOKIES:
+            usCookies = request.COOKIES.get('username')
+            print(color.red('[' + str(current_time) + '] --> ' + usCookies + '的Cookies记录没有清除，或许登陆时该用户选择了“记住用户名'))
+        else:
+            print(color.red(
+                '[' + str(current_time) + '] --> ' + user.username + '的Cookies记录不存在或者在登陆时已被清除，原因是登陆时该用户没有选择“记住用户名'))
 
         # 跳转到首页
         return redirect(reverse('index:oa_index'))

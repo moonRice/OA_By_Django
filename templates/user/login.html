@@ -13,7 +13,8 @@
             <hr>
         </div>
         <label class="sr-only">账号</label>
-        <input type="text" class="form-control" name="username" placeholder="请输入用户名"/>
+        <input type="text" class="form-control" name="username" {% if username %}value="{{ username }}"
+               {% else %}placeholder="请输入用户名"{% endif %}/>
         <br>
         <label class="sr-only">密码</label>
         <input type="password" class="form-control" name="password" placeholder="请输入密码"/>

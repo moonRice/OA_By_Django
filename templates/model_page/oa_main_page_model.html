@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     <script src="{% static 'js/jquery-3.4.1.js' %}"></script>
     <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="/static/js/vue.js" type="text/javascript" charset="utf-8"></script>
     {% block head %}
     {% endblock %}
 </head>
@@ -43,8 +44,28 @@
                 <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> 云服务</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-stats"></span> 数据查询</a></li>
 
-                <li {% if flag == 'guestBook' %}class="active"{% endif %}><a href="{% url 'guestbook:showAll' %}"><span
-                        class="glyphicon glyphicon-edit"></span> 留言簿</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><span class="glyphicon glyphicon-plus-sign"></span> 附加功能<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+
+                        <li class="dropdown-header">小谢</li>
+                        <li {% if flag == 'guestBook' %}class="active"{% endif %}><a
+                                href="{% url 'guestbook:showAll' %}"><span
+                                class="glyphicon glyphicon-edit"></span> 留言簿</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">小吴</li>
+                        <li {% if flag == 'tpxt' %}class="active"{% endif %}><a
+                                href="{% url 'VoteSystem:index' %}"><span class="glyphicon glyphicon-file"></span> 投票系统</a>
+                        </li>
+
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">甲方</li>
+                        <li><a href="#"><span class="glyphicon glyphicon-music"></span> 甲方专属坑位，欢迎入驻</a></li>
+                    </ul>
+                </li>
+
             </ul>
             {#    搜索功能#}
             <form class="navbar-form navbar-left">

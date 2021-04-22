@@ -1,0 +1,36 @@
+{#{% extends 'model_page/oa_main_page_model.html' %}#}
+{% extends 'TouPiaoXiTong/vs_left_info_model.html' %}
+
+{% block title %}
+    查看所有投票项目
+{% endblock %}
+
+{% block right_info %}
+    <div class="container">
+        <div class="row">
+            {% for a in all %}
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="/static/images/1.png" alt="...">
+                        <div class="caption">
+                            <div align="center">
+                                <h3>{{ a.XMMC }}</h3>
+                                <p>发布人：{{ a.CJR }}</p>
+                                <p> 创建时间：{{ a.CJRQ }}</p>
+                            </div>
+                            <div align="right">
+                                <p>
+                                    <a href="{% url 'VoteSystem:kstp' a.XMID %}" class="btn btn-primary" role="button"
+                                       target="_blank">前往投票</a>
+                                    <a href="#" class="btn btn-default" role="button">统计数据</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+{% endblock %}

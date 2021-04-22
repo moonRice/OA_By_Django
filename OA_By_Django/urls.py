@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 
@@ -28,16 +29,20 @@ urlpatterns = [
     # OA主页
     # path('', include(('apps.index.urls', 'oa_index'), namespace='oa_index')),
 
+    # 富文本编辑器
+    url(r'^froala_editor/', include('froala_editor.urls')),
+    # path('tinymce/', include('tinymce.urls')),
+
     # 无纸化办公
     path('wz/', include(('apps.WuZhiHuaBanGong.urls', 'oa_wzhbg'), namespace='oa_wzhbg')),
 
     # 用户
     path('user/', include(('apps.user.urls', 'user'), namespace='user')),
 
-
     # 留言簿
     path('guestbook/', include(('apps.chats.urls', 'guestbook'), namespace='guestbook')),
 
+    # 投票系统
+    path('guestbook/', include(('apps.TouPiaoXiTong.urls', 'TouPiaoXiTong'), namespace='VoteSystem')),
 
 ]
-

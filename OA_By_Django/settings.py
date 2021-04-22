@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'simpleui',
     # MD编辑器
     'mdeditor',
+    # 富文本编辑器
+    'froala_editor',
 
     # 系统apps
     'django.contrib.admin',
@@ -60,6 +62,9 @@ INSTALLED_APPS = [
 
     # 留言簿模块
     'apps.chats',
+
+    # 投票系统
+    'apps.TouPiaoXiTong',
 
     # 后台X-admin
     # 'apps.xadmin',
@@ -158,3 +163,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Django默认认证系统对is_active的验证--》无法验证问题解决方案
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBackend']
+
+# 配置富文本编辑器

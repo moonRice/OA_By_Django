@@ -1,0 +1,113 @@
+{#{% extends 'model_page/oa_main_page_model.html' %}#}
+{% extends 'TouPiaoXiTong/vs_left_info_model.html' %}
+
+{% block title %}
+    查看模板文件
+{% endblock %}
+
+{% block right_info %}
+    <div class="container">
+        <div class="row">
+
+
+            {% for a in mb %}
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        {#                    <img src="/static/images/1.png" alt="...">#}
+                        <div class="caption">
+                            <div align="center">
+                                <h3>模板类型：{{ a.LXID }}</h3>
+                                <p>发布人：系统管理员</p>
+                                {% autoescape off %}
+                                    <p> {{ a.MBNR }}</p>
+                                {% endautoescape %}
+                            </div>
+                            <div align="right">
+                                <p>
+                                    <a class="btn btn-primary" role="button"
+                                       target="_blank" data-toggle="modal" data-target="#errMSG2">使用模板</a>
+                                    <a href="#" class="btn btn-success" role="button" data-toggle="modal"
+                                       data-target="#errMSG">修改模板</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="errMSG2">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div align="center"><br>
+                                <h1 class="modal-title" id="myModalLabel">
+                                    {{ a.LXID }}模板设计功能须知
+                                </h1>
+                                <hr>
+                            </div>
+                            <div class="modal-body"><h3>
+                                目前的投票模板仅供前台查看效果，实际的修改删除还须联系您的后台管理员。
+                                <br>
+                                感谢您使用我们的系统，我们会加紧开发！</h3>
+                            </div>
+                            <br>
+                            <div class="modal-footer">
+                                <a href="{% url 'VoteSystem:symb' a.MBID %}" target="_blank">
+                                    <button type="button" class="btn btn-primary">
+                                        查看模板
+                                    </button>
+                                </a>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                    关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            {% endfor %}
+
+
+            <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="errMSG">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div align="center"><br>
+                            <h1 class="modal-title" id="myModalLabel">
+                                功能正在开发中
+                            </h1>
+                            <hr>
+                        </div>
+                        <div class="modal-body"><h3>
+                            感谢您使用我们的系统，我们会加紧开发！</h3>
+                        </div>
+                        <br>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                关闭
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                $(function () {
+                    $('#errMSG').modal({
+                        keyboard: true,
+                        backdrop: 'static',
+                        show: false
+                    })
+                });
+                $(function () {
+                    $('#errMSG2').modal({
+                        keyboard: true,
+                        backdrop: 'static',
+                        show: false
+                    })
+                });
+            </script>
+
+
+        </div>
+    </div>
+{% endblock %}

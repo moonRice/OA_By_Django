@@ -1,0 +1,51 @@
+{% extends 'model_page/oa_main_page_model.html' %}
+
+{% block title %}
+    模板编号：{{ mb }}
+{% endblock %}
+
+{% block body %}
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="">
+        <tbody>
+        <tr>
+            <td align="center" class="title" height="60">
+                <br>模板编号：{{ mb.MBID }} 备注：{{ mb.BZXX }}
+                <br>
+
+                <table align="center" border="1" cellpadding="10" cellspacing="0"
+                       style="background-color: transparent; font-family: sans-serif; font-size: 14px; text-align: left;">
+                    <thead>
+                    <tr>
+                        <th colspan="4">
+                            <div style="text-align: center;">模板名称：______{{ mbmc }}_______</div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="text-align: center;">票据编号：No____自动创建____</td>
+                        <td>创建日期：____{{ cjrq }}____</td>
+                        <td>创建人：____{{ cjr }}____</td>
+                        <td>票件类型：____{{ mbmc.LXMC }}____</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">【问题】例如：今年的五一假期，你回去哪里玩？
+                            <br>【选项】
+                            <br>
+                            <input type="radio" name="mayday" value="jld"> A、家里蹲
+                            <br>
+                            <input type="radio" name="mayday" value="cqw">&nbsp;B、出去玩
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div align="center">
+        <button class="btn btn-success" type="button">&nbsp; 投票&nbsp;</button>
+        <button class="btn btn-primary" type="button">&nbsp; 退出&nbsp;</button>
+        <button class="btn btn-danger" type="button">&nbsp; 举报&nbsp;</button>
+    </div>
+{% endblock %}

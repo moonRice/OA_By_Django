@@ -1,0 +1,85 @@
+{% extends 'TouPiaoXiTong/vs_left_info_model.html' %}
+
+{% block title %}
+    创建新的投票
+{% endblock %}
+
+{% block head %}
+    <script>
+        window.onload = function () {
+            const dong = document.getElementById("errMSGfunc");
+            // alert(dong);
+            dong.onclick = function () {
+                alert("都说了没开发完，你点什么点？");
+            }
+        }
+    </script>
+{% endblock %}
+
+{% block right_info %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="/static/images/1.png" alt="...">
+                    <div class="caption">
+                        <div align="center">
+                            <h3>客户服务满意度调查</h3>
+                            <p>单击创建</p>
+                        </div>
+                        <div align="right">
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button" data-toggle="modal"
+                                   data-target="#errMSG">创建投票</a>
+                                {#                                <a href="#" class="btn btn-default" role="button">统计数据</a>#}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="errMSG">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div align="center"><br>
+                        <h1 class="modal-title" id="myModalLabel">
+                            用模板创建投票功能须知
+                        </h1>
+                        <hr>
+                    </div>
+                    <div class="modal-body"><h3>
+                        目前的投票模板仅供前台查看效果，实际的修改删除添加还须联系您的后台管理员。
+                        <br>
+                        感谢您使用我们的系统，我们会加紧开发！</h3>
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="errMSGfunc">
+                            创建
+                        </button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                            关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $('#errMSG').modal({
+                    keyboard: true,
+                    backdrop: 'static',
+                    show: false
+                })
+            });
+            $('#errMSG').on('hide.bs.modalMSG',
+                function () {
+                    alert('嘿，我听说您喜欢模态框...');
+                })
+        </script>
+
+
+    </div>
+
+{% endblock %}

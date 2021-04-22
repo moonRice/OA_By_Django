@@ -67,3 +67,44 @@ class Account(models.Model):
         db_table = 'fh_staff_information'
         verbose_name = '教职工信息'
         verbose_name_plural = verbose_name
+
+
+"""==================== 银行模型类 ===================="""
+
+
+class BankDepartment(models.Model):
+    """银行部门信息模型类"""
+    name = models.CharField(max_length=255, verbose_name='部门名称')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'OA_BankDepartment_information'
+        verbose_name = '银行部门信息'
+        verbose_name_plural = verbose_name
+
+
+class BankAccount(models.Model):
+    """银行投票系统用"""
+    gender_choices = (
+        (0, '先生'),
+        (1, '女士'),
+    )
+    name = models.CharField(max_length=255, verbose_name='姓名')
+    account = models.OneToOneField(
+        User,
+        on_delete=models.DO_NOTHING,
+        verbose_name='银行账号信息',
+        help_text='一一对应职工注册的账号，需要审核。'
+    )
+    gender = models.SmallIntegerField(default=0, choices=gender_choices, verbose_name='性别')
+    department = models.ForeignKey(BankDepartment, on_delete=models.DO_NOTHING, verbose_name='所属银行部门')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'OA_BankAccount_information'
+        verbose_name = '银行用户个人信息'
+        verbose_name_plural = verbose_name

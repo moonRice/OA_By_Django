@@ -1,0 +1,14 @@
+{% extends 'model_page/quick_start_page_model.html' %}
+
+{% block left_info %}
+    <li role="presentation" {% if flag2 == 'cktpxm' %}class="active"{% endif %}><a href="{% url 'VoteSystem:cktpxm' %}">
+        <span class="glyphicon glyphicon-indent-right"></span> 查看投票项目</a></li>
+
+    <li role="presentation" {% if flag2 == 'cjxtp' %}class="active"{% endif %}><a href="{% url 'VoteSystem:cjxtp' %}">
+        <span class="glyphicon glyphicon-wrench"></span> 创建新的投票</a></li>
+
+    <li role="presentation" {% if flag2 == 'ckmbwj' %}class="active"{% endif %}><a href="{% url 'VoteSystem:ckmbwj' %}">
+        <span class="glyphicon glyphicon-list-alt"></span> 查看模板文件</a></li>
+    <li role="presentation" {% if flag2 == 'sjtj' %}class="active"{% endif %}><a href="{% url 'VoteSystem:tjsj' %}">
+        <span class="glyphicon glyphicon-th-list"></span> 查看统计数据</a></li>
+{% endblock %}
