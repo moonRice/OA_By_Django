@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import options.options_development_envirnment as ode
+import options.settings as st
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +39,11 @@ INSTALLED_APPS = [
     'mdeditor',
     # 富文本编辑器
     'froala_editor',
+    # 数据导出
+    'import_export',
+
+    # Django文档
+    'django.contrib.admindocs',
 
     # 系统apps
     'django.contrib.admin',
@@ -68,6 +73,9 @@ INSTALLED_APPS = [
 
     # 后台X-admin
     # 'apps.xadmin',
+
+    # 连接Oracle数据库
+    'apps.orcl',
 ]
 
 MIDDLEWARE = [
@@ -107,22 +115,7 @@ WSGI_APPLICATION = 'OA_By_Django.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': ode.DATABASES_NAME,
-        'USER': ode.DATABASES_USER,
-        'PASSWORD': ode.DATABASES_PASSWORD,
-        'HOST': ode.DATABASES_SERVER_IP,
-        'PORT': ode.DATABASES_SERVER_PORT
-    }
-}
+DATABASES = st.DATABASE_SQLITE
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -164,4 +157,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # Django默认认证系统对is_active的验证--》无法验证问题解决方案
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBackend']
 
-# 配置富文本编辑器
+# 默认值为False。它确定库是否会在数据导入中使用数据库事务，以确保安全
+IMPORT_EXPORT_USE_TRANSACTIONS = True

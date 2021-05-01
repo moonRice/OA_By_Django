@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.views import View
 
-
 # Create your views here.
 from apps.user.models import User
 
@@ -44,3 +43,11 @@ class showOAIndex(View):
             'errmsg': '',
         }
         return render(request, 'ERROR_pages/err_page.html', context)
+
+
+class showAdminDocs(View):
+    def get(self, request):
+        return render(request, 'AdminDoc/idx.html')
+
+    def post(self, request):
+        pass

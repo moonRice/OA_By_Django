@@ -1,0 +1,21 @@
+{% extends 'model_page/oa_main_page_model.html' %}
+
+{% block title %}
+    本站技术文档
+{% endblock %}
+
+{% block head %}
+    <style>
+        body {
+            background: #f0f0f0;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div align="center">
+            <iframe src="/admin/doc" width="1200" height="800" frameborder="0"></iframe>
+        </div>
+    </div>
+{% endblock %}

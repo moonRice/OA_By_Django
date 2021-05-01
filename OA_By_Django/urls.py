@@ -17,9 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     # 总后台管理系统
     path('admin/', admin.site.urls),
+    path('admin/doc/', include('django.contrib.admindocs.urls')),
 
     # 重做后台管理系统
 
@@ -44,5 +46,8 @@ urlpatterns = [
 
     # 投票系统
     path('VoteSystem/', include(('apps.TouPiaoXiTong.urls', 'TouPiaoXiTong'), namespace='VoteSystem')),
+
+    # Oracle数据库管理
+    path('orcl/', include(('apps.orcl.urls', 'orcl'), namespace='orcl')),
 
 ]

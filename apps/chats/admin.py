@@ -1,10 +1,11 @@
+from import_export.admin import ImportExportModelAdmin as exp
 from django.contrib import admin
 from .models import guestBook, reply
 
 
 # Register your models here.
 @admin.register(guestBook)
-class guM(admin.ModelAdmin):
+class guM(exp):
     list_display = (
         'title',
         'auth',
@@ -14,7 +15,7 @@ class guM(admin.ModelAdmin):
 
 
 @admin.register(reply)
-class reM(admin.ModelAdmin):
+class reM(exp):
     list_display = (
         'auth',
         'create_time',

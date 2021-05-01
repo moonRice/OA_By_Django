@@ -10,15 +10,15 @@
     <script src="{% static 'js/echarts/echarts.js' %}"></script>
     <div class="container">
         <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-        <div id="main" style="width: 1200px;height:600px;"></div>
+        <div id="tpsj" style="width: 1200px;height:600px;"></div>
         <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('main'));
+            var myChart = echarts.init(document.getElementById('tpsj'));
 
             // 指定图表的配置项和数据
             var option = {
                 title: {
-                    text: '五一假期计划统计'
+                    text: '所有投票统计'
                 },
                 tooltip: {
                     trigger: 'item'

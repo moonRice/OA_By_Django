@@ -1,0 +1,53 @@
+{% extends 'model_page/oa_main_page_model.html' %}
+{% load static %}
+
+{% block title %}
+    Oracle数据库操作
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>数据库操作</h1>
+        <hr>
+        <br>
+
+
+        <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+                <img src="{% static 'images/logo.PNG' %}" class="img-rounded">
+                <div class="caption">
+                    <p class="lead" align="center">刷新流程<br>创建状态</p>
+                    <div align="left">
+                        <p>
+                            <small>使用说明：</small>
+                    </div>
+                    <br>
+                    <div align="center">
+                        <a href="#" class="btn btn-primary" role="button" target="_blank">执行</a>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+                <img src="{% static 'images/logo.PNG' %}" class="img-rounded">
+                <div class="caption">
+                    <p class="lead" align="center">刷新共享<br>数据库</p>
+                    <div align="left">
+                        <p>
+                            <small>使用说明：</small>
+                    </div>
+                    <br>
+                    <div align="center">
+                        <a href="#" class="btn btn-primary" role="button" target="_blank">执行</a>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}

@@ -9,11 +9,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://192.168.0.81:3306/oa</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="db" uuid="1459d19e-ac59-48f3-920e-87a68f8b38cc">
+    <data-source source="LOCAL" name="db" uuid="31ec3676-268c-4c3e-aaf1-88e25bf28965">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:E:\MyProjects\Python\Django\OA_By_Django\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\MyProjects\Python\Django\OA\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

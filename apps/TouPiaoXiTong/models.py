@@ -51,12 +51,12 @@ class XMLX(models.Model):
 class TPXM(models.Model):
     XMID = models.IntegerField(verbose_name='票件项目ID')
     XMMC = models.CharField(max_length=255, verbose_name='票件项目名称')
-    XMLX = models.OneToOneField(XMLX, on_delete=models.DO_NOTHING,
-                                verbose_name='票件类型')
+    XMLX = models.ForeignKey(XMLX, on_delete=models.DO_NOTHING,
+                             verbose_name='票件类型')
     CJRQ = models.DateTimeField('保存日期', default=timezone.now)
-    CJR = models.OneToOneField(BankAccount, on_delete=models.DO_NOTHING,
-                               verbose_name='创建人账号',
-                               help_text='选择创建人')
+    CJR = models.ForeignKey(BankAccount, on_delete=models.DO_NOTHING,
+                            verbose_name='创建人账号',
+                            help_text='选择创建人')
     CYR = models.ManyToManyField(BankDepartment,
                                  verbose_name='参与人员',
                                  help_text='选择可以参与投票的人')
@@ -120,7 +120,7 @@ class LXMB(models.Model):
 class tongji(models.Model):
     XXID = models.ForeignKey(XXSJ, on_delete=models.DO_NOTHING, verbose_name='选项ID')
     TPR = models.ForeignKey(BankAccount, on_delete=models.DO_NOTHING, verbose_name='投票人')
-    TPSJ = models.DateTimeField('投票日期')
+    TPSJ = models.DateTimeField('投票日期', default=timezone.now)
 
     def __str__(self):
         return '%s' % self.TPR

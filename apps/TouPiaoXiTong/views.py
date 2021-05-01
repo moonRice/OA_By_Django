@@ -1,5 +1,10 @@
 import datetime
 
+import json
+
+from django.db.models import Count
+from django.http import JsonResponse, HttpResponse
+
 from django.shortcuts import render
 
 from django.views import View
@@ -106,7 +111,7 @@ def useModel(request, mb_id):
     current_time = datetime.datetime.now()
     username = request.user
     mb = LXMB.objects.get(MBID=mb_id)
-    mbmc = XMLX.objects.get(LXID=mb.LXID_id)
+    mbmc = XMLX.objects.get(LXID=str(mb))
     # mblx = XMLXZD
     user = User.objects.get(username=username)
     cjr = BankAccount.objects.get(account_id=user.id)
@@ -160,6 +165,9 @@ def tongjiFunc(request):
             temp = data2.COUNT
             data2.COUNT = temp + 1
             data2.save()
+            tj = tongji(XXID=(XXSJ.objects.get(XXID=choice)),
+                        TPR=(BankAccount.objects.get(account=(User.objects.get(username=username)))))
+            tj.save()
             print(color.blue('[' + str(current_time) + '] --> ' + str(username) + '的选择在数据库中是新创建的，并且成功写入了数据库'))
             # print(choice)
             return render(request, 'TouPiaoXiTong/ok.html', {
@@ -169,6 +177,9 @@ def tongjiFunc(request):
         temp = data.COUNT
         data.COUNT = temp + 1
         data.save()
+
+        tj = tongji(XXID=(XXSJ.objects.get(XXID=choice)),
+                    TPR=(BankAccount.objects.get(account=(User.objects.get(username=username)))))
         tj.save()
         print(color.blue('[' + str(current_time) + '] --> ' + str(username) + '的选择成功写入了数据库'))
         # print(choice)
@@ -178,9 +189,17 @@ def tongjiFunc(request):
 
 
 def tjsj(request):
-    data = tongjiCount.objects.all()
+    data = tongjiCount.objects.all()[:100]
+    print(data)
+    json_list = []
+    for a in data:
+        json_dict = {}
+        json_dict["name"] = a.XXID
+        json_dict["count"] = a.COUNT
+        json_list.append(json_dict)
     context = {
         'data': data,
         'flag2': 'sjtj',
     }
-    return render(request, 'TouPiaoXiTong/zssj.html', context)
+    # return render(request, 'TouPiaoXiTong/zssj.html', context)
+    return HttpResponse(json.dump(json_list), content_type="application/json")

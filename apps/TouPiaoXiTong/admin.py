@@ -1,3 +1,4 @@
+from import_export.admin import ImportExportModelAdmin as exp
 from django.contrib import admin
 from .models import TPXM, XMZT, XMZTZD, XMLX, LXMB, XXSJ, XMSJ, tongji, tongjiCount
 
@@ -7,7 +8,7 @@ from .models import TPXM, XMZT, XMZTZD, XMLX, LXMB, XXSJ, XMSJ, tongji, tongjiCo
 # admin.site.register(ti)
 
 @admin.register(tongjiCount)
-class tongjicountManage(admin.ModelAdmin):
+class tongjicountManage(exp):
     list_display = (
         'XXID',
         'COUNT'
@@ -15,7 +16,7 @@ class tongjicountManage(admin.ModelAdmin):
 
 
 @admin.register(tongji)
-class tongjiManage(admin.ModelAdmin):
+class tongjiManage(exp):
     list_display = (
         'XXID',
         'TPR',
@@ -24,7 +25,7 @@ class tongjiManage(admin.ModelAdmin):
 
 
 @admin.register(TPXM)
-class tpxmManage(admin.ModelAdmin):
+class tpxmManage(exp):
     list_display = (
         'XMID',
         'XMMC',
@@ -35,7 +36,7 @@ class tpxmManage(admin.ModelAdmin):
 
 
 @admin.register(XMZT)
-class xmztManage(admin.ModelAdmin):
+class xmztManage(exp):
     list_display = (
         'XMID',
         'XMZT'
@@ -43,7 +44,7 @@ class xmztManage(admin.ModelAdmin):
 
 
 @admin.register(XMZTZD)
-class xmztzdManage(admin.ModelAdmin):
+class xmztzdManage(exp):
     list_display = (
         'ZTID',
         'ZTMC'
@@ -51,7 +52,7 @@ class xmztzdManage(admin.ModelAdmin):
 
 
 @admin.register(XMLX)
-class xmlxManage(admin.ModelAdmin):
+class xmlxManage(exp):
     list_display = (
         'LXID',
         'LXMC'
@@ -59,7 +60,7 @@ class xmlxManage(admin.ModelAdmin):
 
 
 @admin.register(LXMB)
-class lxmbManage(admin.ModelAdmin):
+class lxmbManage(exp):
     list_display = (
         'LXID',
         'MBID',
@@ -69,7 +70,7 @@ class lxmbManage(admin.ModelAdmin):
 
 
 @admin.register(XMSJ)
-class xmsjManage(admin.ModelAdmin):
+class xmsjManage(exp):
     list_display = (
         'SJID',
         'WT',
@@ -77,7 +78,7 @@ class xmsjManage(admin.ModelAdmin):
 
 
 @admin.register(XXSJ)
-class xxsjManage(admin.ModelAdmin):
+class xxsjManage(exp):
     list_display = (
         'XXID',
         'XXSJ'
