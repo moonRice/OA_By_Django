@@ -89,7 +89,7 @@ class showModels(View):
         all_models = LXMB.objects.all()
         lxmc_list = []
         for a in all_models:
-            b = XMLX.objects.get(LXID=a.MBID)
+            b = XMLX.objects.get(id=a.id)
             lxmc_list.append(b)
 
         context = {

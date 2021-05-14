@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '149o+(1fjax5358&d)cdn805ipb)*9%$@#$wnn631rx-fd*ra-'
+SECRET_KEY = 'django-insecure-0pc06y!nf+&#9s%@4nxr8-8_01ymeqkqvrf%ynof!+br-qb%)5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -159,3 +159,4 @@ AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBacke
 
 # 默认值为False。它确定库是否会在数据导入中使用数据库事务，以确保安全
 IMPORT_EXPORT_USE_TRANSACTIONS = True
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'

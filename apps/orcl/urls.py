@@ -15,9 +15,14 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
-from .views import showIndex
+
+from . import views
+from .views import showIndex, runSQL
+from django.contrib.auth.decorators import login_required
+
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('idx', showIndex.as_view(), name='orcl')
+    path('idx', login_required(showIndex.as_view()), name='idx'),
+    path('run/<int:cz_id>', login_required(views.runSQL), name='run'),
 ]

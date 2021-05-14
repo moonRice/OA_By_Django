@@ -20,8 +20,8 @@ from django.urls import path, include
 
 urlpatterns = [
     # 总后台管理系统
-    path('admin/', admin.site.urls),
     path('admin/doc/', include('django.contrib.admindocs.urls')),
+    path('admin/', admin.site.urls),
 
     # 重做后台管理系统
 
