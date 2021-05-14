@@ -89,4 +89,6 @@ def runSQL(request, cz_id):
         print(cur)
         db.close()
         jlip(request, cz_id)
-        return render(request, 'orcl/cz/update.html')
+        return render(request, 'orcl/cz/update.html', {
+            'msg': '执行成功'
+        })

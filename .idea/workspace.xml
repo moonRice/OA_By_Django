@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="497239a0-2d95-46f8-9aaa-3fd0e9d54b09" name="默认变更列表" comment="周末推送" />
+    <list default="true" id="497239a0-2d95-46f8-9aaa-3fd0e9d54b09" name="默认变更列表" comment="周末推送">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/orcl/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/orcl/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +82,7 @@
       <workItem from="1620441362362" duration="34000" />
       <workItem from="1620441412646" duration="618000" />
       <workItem from="1620457798309" duration="786000" />
-      <workItem from="1620959761520" duration="1460000" />
+      <workItem from="1620959761520" duration="1841000" />
     </task>
     <task id="LOCAL-00001" summary="周末推送">
       <created>1620963991155</created>
@@ -88,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620963991155</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="周末推送">
+      <created>1620972274228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620972274229</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
