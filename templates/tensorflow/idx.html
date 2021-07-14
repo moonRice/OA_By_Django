@@ -1,0 +1,13 @@
+{% extends 'model_page/oa_main_page_model.html' %}
+
+{% block title %}
+    Tenforflow Beta
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>{{ msg }}</h1>
+        <br>
+        来自TF的计算见面礼——<code>[loss, accuracy] = {{ re }}</code>
+    </div>
+{% endblock %}

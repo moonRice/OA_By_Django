@@ -19,30 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="497239a0-2d95-46f8-9aaa-3fd0e9d54b09" name="默认变更列表" comment="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。">
-      <change beforePath="$PROJECT_DIR$/.idea/OA_By_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OA_By_Django.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OA_By_Django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OA_By_Django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/TouPiaoXiTong/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.common.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.common.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.esm.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.simple.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.simple.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.simple.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/extension/bmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/extension/bmap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/extension/bmap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/extension/bmap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vue.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/vue.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" afterDir="false" />
-    </list>
+    <list default="true" id="497239a0-2d95-46f8-9aaa-3fd0e9d54b09" name="默认变更列表" comment="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="5c9f1a73-b91c-4133-827b-ca4dbb44fd1b" />
+  <component name="JupyterTrust" id="5b8b04ae-7bce-4012-a624-7b20d3fdfa85" />
   <component name="ProjectId" id="1sBsfOMaGD1Pm41qV0S5hmutWtG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -158,7 +135,7 @@
       <workItem from="1626233482117" duration="2725000" />
       <workItem from="1626256349023" duration="1512000" />
       <workItem from="1626258646870" duration="330000" />
-      <workItem from="1626259448587" duration="10000" />
+      <workItem from="1626259448587" duration="1321000" />
     </task>
     <task id="LOCAL-00001" summary="周末推送">
       <created>1620963991155</created>
@@ -202,7 +179,35 @@
       <option name="project" value="LOCAL" />
       <updated>1626258863795</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。">
+      <created>1626259498203</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626259498203</updated>
+    </task>
+    <task id="LOCAL-00008" summary="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。">
+      <created>1626259733154</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626259733154</updated>
+    </task>
+    <task id="LOCAL-00009" summary="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。">
+      <created>1626260283107</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626260283107</updated>
+    </task>
+    <task id="LOCAL-00010" summary="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。">
+      <created>1626260729740</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626260729740</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +234,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="152" y="68" key="DiffContextDialog" timestamp="1626260414838">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state x="152" y="68" key="DiffContextDialog/0.0.1600.852@0.0.1600.852" timestamp="1626260414838" />
     <state x="523" y="169" key="FileChooserDialogImpl" timestamp="1626233030988">
       <screen x="0" y="0" width="1600" height="852" />
     </state>
@@ -237,9 +246,13 @@
       <screen x="0" y="0" width="1600" height="852" />
     </state>
     <state x="188" y="74" key="SettingsEditor/0.0.1600.852@0.0.1600.852" timestamp="1626259457087" />
-    <state x="392" y="159" key="Vcs.Push.Dialog.v2" timestamp="1626259006420">
+    <state x="392" y="159" key="Vcs.Push.Dialog.v2" timestamp="1626260739416">
       <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state x="392" y="159" key="Vcs.Push.Dialog.v2/0.0.1600.852@0.0.1600.852" timestamp="1626259006420" />
+    <state x="392" y="159" key="Vcs.Push.Dialog.v2/0.0.1600.852@0.0.1600.852" timestamp="1626260739416" />
+    <state x="613" y="339" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626260775735">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state x="613" y="339" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.852@0.0.1600.852" timestamp="1626260775735" />
   </component>
 </project>

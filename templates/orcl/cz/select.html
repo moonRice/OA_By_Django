@@ -1,0 +1,33 @@
+{% extends 'model_page/oa_main_page_model.html' %}
+{% load static %}
+
+{% block title %}
+    操作结果
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>检索数据结果</h1>
+        <hr>
+        <div align="center">
+            <table class="table table-hover">
+
+                <thead>
+                {% for a in zd %}
+                <td>{% for b in a %}<h4>{{ b }}</h4>{% endfor %}</td>
+                {% endfor %}
+                </thead>
+
+                <tbody>
+                {% for a in db %}
+                    <tr>
+                        {% for b in a %}
+                            <td>{{ b }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
