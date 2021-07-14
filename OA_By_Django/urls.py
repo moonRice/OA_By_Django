@@ -50,4 +50,7 @@ urlpatterns = [
     # Oracle数据库管理
     path('orcl/', include(('apps.orcl.urls', 'orcl'), namespace='orcl')),
 
+    # Tensorflow
+    # path('tf/', include(('apps.tensorflow.urls', 'orcl'), namespace='tf')),
+
 ]

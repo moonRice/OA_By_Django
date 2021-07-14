@@ -189,6 +189,7 @@ def tongjiFunc(request):
 
 
 def tjsj(request):
+
     data = tongjiCount.objects.all()[:100]
     print(data)
     json_list = []
@@ -202,4 +203,4 @@ def tjsj(request):
         'flag2': 'sjtj',
     }
     # return render(request, 'TouPiaoXiTong/zssj.html', context)
-    return HttpResponse(json.dump(json_list), content_type="application/json")
+    return HttpResponse(json.dumps(json_list), content_type="application/json")

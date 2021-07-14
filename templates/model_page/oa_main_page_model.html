@@ -42,7 +42,7 @@
                 {#                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> 设备报修</a></li>#}
                 <li><a href="#"><span class="glyphicon glyphicon-education"></span> 教育在线</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-hdd"></span> 文件管理</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> 云服务</a></li>
+
                 <li><a href="#"><span class="glyphicon glyphicon-stats"></span> 数据查询</a></li>
 
                 <li class="dropdown">
@@ -57,6 +57,33 @@
                                 class="glyphicon glyphicon-edit"></span> 留言簿</a></li>
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">小吴</li>
+                        <li {% if flag == 'tpxt' %}class="active"{% endif %}><a
+                                href="{% url 'VoteSystem:index' %}"><span class="glyphicon glyphicon-file"></span> 投票系统</a>
+                        </li>
+
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">运维工具</li>
+                        <li><a href="{% url 'orcl:idx' %}"><span class="glyphicon glyphicon-wrench"></span> 数据库操作</a></li>
+
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">本站技术文档</li>
+                        <li><a href="{% url 'index:docs' %}"><span class="glyphicon glyphicon-paperclip"></span> Django
+                            AdminDoc</a></li>
+                    </ul>
+                </li>
+
+            <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><span class="glyphicon glyphicon-tasks"></span> AI LAb<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+
+                        <li class="dropdown-header">机器学习</li>
+                        <li {% if flag == 'guestBook' %}class="active"{% endif %}><a
+                                href="#"><img
+                                src="{% static 'images/tf_favicon.png' %}" width="15px" height="15px"/> Tensorflow</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">大数据</li>
                         <li {% if flag == 'tpxt' %}class="active"{% endif %}><a
                                 href="{% url 'VoteSystem:index' %}"><span class="glyphicon glyphicon-file"></span> 投票系统</a>
                         </li>

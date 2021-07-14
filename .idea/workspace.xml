@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="497239a0-2d95-46f8-9aaa-3fd0e9d54b09" name="默认变更列表" comment="周末推送">
+    <list default="true" id="497239a0-2d95-46f8-9aaa-3fd0e9d54b09" name="默认变更列表" comment="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。">
+      <change beforePath="$PROJECT_DIR$/.idea/OA_By_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OA_By_Django.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/orcl/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/orcl/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OA_By_Django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OA_By_Django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA_By_Django/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/TouPiaoXiTong/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/TouPiaoXiTong/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.common.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.common.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.simple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/echarts.simple.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/echarts.simple.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/extension/bmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/extension/bmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/extension/bmap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/extension/bmap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/extension/dataTool.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/vue.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/vue.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model_page/oa_main_page_model.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="5c9f1a73-b91c-4133-827b-ca4dbb44fd1b" />
   <component name="ProjectId" id="1sBsfOMaGD1Pm41qV0S5hmutWtG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,6 +70,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -34,14 +78,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/OA_By_Django" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\MyProjects\Python\Django\OA_By_Django\OA_By_Django" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\Python\Django\OA_By_Django\apps" />
       <recent name="D:\MyProjects\Python\Django\OA_By_Django\templates\orcl\cz" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\Python\Django\OA_By_Django\AI_Lab\tensorflow" />
+      <recent name="D:\MyProjects\Python\Django\OA_By_Django" />
+      <recent name="D:\MyProjects\Python\Django\OA_By_Django\apps\tensorflow" />
+      <recent name="D:\MyProjects\Python\Django\OA_By_Django\OA_By_Django" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,7 +131,34 @@
       <workItem from="1620441362362" duration="34000" />
       <workItem from="1620441412646" duration="618000" />
       <workItem from="1620457798309" duration="786000" />
-      <workItem from="1620959761520" duration="1841000" />
+      <workItem from="1620959761520" duration="2114000" />
+      <workItem from="1621304200386" duration="88000" />
+      <workItem from="1621304306012" duration="1251000" />
+      <workItem from="1621415476761" duration="373000" />
+      <workItem from="1621480642119" duration="2845000" />
+      <workItem from="1621491570319" duration="865000" />
+      <workItem from="1621492534717" duration="4894000" />
+      <workItem from="1621820567981" duration="216000" />
+      <workItem from="1621842953394" duration="790000" />
+      <workItem from="1621948540412" duration="294000" />
+      <workItem from="1621948848394" duration="2000" />
+      <workItem from="1622161312677" duration="1257000" />
+      <workItem from="1622162616860" duration="336000" />
+      <workItem from="1622431168495" duration="2000" />
+      <workItem from="1622593719351" duration="1358000" />
+      <workItem from="1622602825235" duration="15000" />
+      <workItem from="1623134786934" duration="7000" />
+      <workItem from="1623720487847" duration="596000" />
+      <workItem from="1623721614976" duration="659000" />
+      <workItem from="1623728887298" duration="1220000" />
+      <workItem from="1623738096488" duration="164000" />
+      <workItem from="1623738302747" duration="2075000" />
+      <workItem from="1626232825392" duration="81000" />
+      <workItem from="1626232920532" duration="477000" />
+      <workItem from="1626233482117" duration="2725000" />
+      <workItem from="1626256349023" duration="1512000" />
+      <workItem from="1626258646870" duration="330000" />
+      <workItem from="1626259448587" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="周末推送">
       <created>1620963991155</created>
@@ -98,7 +174,35 @@
       <option name="project" value="LOCAL" />
       <updated>1620972274229</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新对Oracle数据库的支持&#10;【完成】&#10;1、Oracle数据库操作模块设计初步完成；&#10;&#10;【预期】&#10;2、完善投票系统；&#10;3、设计知识库模块；&#10;4、完善对Oracle数据库的支持。">
+      <created>1620972479530</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620972479530</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更新对Oracle数据库的支持&#10;【完成】&#10;1、Oracle数据库操作模块设计初步完成；&#10;&#10;【预期】&#10;2、完善投票系统；&#10;3、设计知识库模块；&#10;4、完善对Oracle数据库的支持。">
+      <created>1621304220305</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621304220305</updated>
+    </task>
+    <task id="LOCAL-00005" summary="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。">
+      <created>1626258720283</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626258720283</updated>
+    </task>
+    <task id="LOCAL-00006" summary="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。">
+      <created>1626258863795</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626258863795</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,9 +218,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="周末推送" />
-    <option name="LAST_COMMIT_MESSAGE" value="周末推送" />
+    <MESSAGE value="更新对Oracle数据库的支持&#10;【完成】&#10;1、Oracle数据库操作模块设计初步完成；&#10;&#10;【预期】&#10;2、完善投票系统；&#10;3、设计知识库模块；&#10;4、完善对Oracle数据库的支持。" />
+    <MESSAGE value="文件同步一波（已关闭TF模块）" />
+    <MESSAGE value="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。" />
+    <option name="LAST_COMMIT_MESSAGE" value="同步一波工程文件，变更如下：&#10;1、关闭TF模块（考虑到数据量、算力、优化等问题）；&#10;2、真的好久没同步了，实在不方便。" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="523" y="169" key="FileChooserDialogImpl" timestamp="1626233030988">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state x="523" y="169" key="FileChooserDialogImpl/0.0.1600.852@0.0.1600.852" timestamp="1626233030988" />
+    <state x="188" y="74" key="SettingsEditor" timestamp="1626259457087">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state x="188" y="74" key="SettingsEditor/0.0.1600.852@0.0.1600.852" timestamp="1626259457087" />
+    <state x="392" y="159" key="Vcs.Push.Dialog.v2" timestamp="1626259006420">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state x="392" y="159" key="Vcs.Push.Dialog.v2/0.0.1600.852@0.0.1600.852" timestamp="1626259006420" />
   </component>
 </project>

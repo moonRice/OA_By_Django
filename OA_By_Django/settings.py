@@ -76,6 +76,9 @@ INSTALLED_APPS = [
 
     # 连接Oracle数据库
     'apps.orcl',
+
+    # tensorflow
+    # 'apps.tensorflow',
 ]
 
 MIDDLEWARE = [
